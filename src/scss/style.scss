@@ -5,25 +5,25 @@
         font-weight: normal;
         font-style: normal;
     }
-    
+
     @import 'owl.carousel.min.css';
     @import 'owl.theme.default.css';
     * {
         margin: 0;
         padding: 0;
     }
-    
+
     .wrapper {
         width: 1200px;
         margin: 0 auto;
     }
-    
+
     .header-top {
         padding: 15px;
         display: flex;
         justify-content: space-between;
     }
-    
+
     .header-botton {
         padding: 15px;
         display: flex;
@@ -43,14 +43,15 @@
             list-style: none;
         }
     }
-    
+
     .visitca {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         .owl-carousel {
             .owl-nav {
                 position: absolute;
                 bottom: 10%;
-                left: 10%;
+                width: 100%;
+                margin: 0 auto;
                 .owl-next {
                     span {
                         width: 42px;
@@ -66,8 +67,8 @@
                     position: absolute;
                     width: 500px;
                     height: 240px;
-                    left: 22vw;
                     top: 24%;
+                    margin-left: 15px;
                     h4 {
                         font-family: Commissioner;
                         font-style: normal;
@@ -106,7 +107,7 @@
             }
         }
     }
-    
+
     .basic-information {
         background: #E5E5E5;
         h2 {
@@ -244,7 +245,7 @@
             }
         }
     }
-    
+
     .reviews {
         h2 {
             font-family: Commissioner;
@@ -386,9 +387,10 @@
             }
         }
     }
-    
+
     .service {
         background: #E5E5E5;
+        padding-bottom: 85px;
         h2 {
             font-family: Commissioner;
             font-style: normal;
@@ -445,6 +447,319 @@
         .pictureBackground {
             width: 100%;
         }
+        .service-list {
+            display: flex;
+            .servis-item {
+                width: 470px;
+                height: 140px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+                margin: 15px;
+                position: relative;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                h3 {
+                    font-family: Commissioner;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: rgba(0, 0, 0, 0.9);
+                    padding: 25px 0 0 100px;
+                }
+                .btn-servisList {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 30px;
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: rgba(0, 0, 0, 0.5);
+                    cursor: pointer;
+                }
+            }
+        }
+        .list-one {
+            .servis-item:last-child {
+                width: 670px;
+            }
+            .servis-item:first-child {
+                width: 470px;
+            }
+        }
+        .list-two {
+            .servis-item {
+                width: 570px;
+            }
+        }
+        .list-three {
+            .servis-item:last-child {
+                width: 470px;
+            }
+            .servis-item:first-child {
+                width: 670px;
+            }
+        }
+        .discription {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            p {
+                width: 770px;
+            }
+            button {
+                font-family: Commissioner;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 30px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                width: 200px;
+                height: 45px;
+                background: #DEC377;
+                border-radius: 2px;
+                border: none;
+            }
+        }
     }
-    
+
+    .confidence {
+        padding: 20px 0 40px;
+        .line {
+            width: 1170px;
+            height: 1px;
+            margin-left: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+        .confidence-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 15px 60px;
+            .confidence-item {
+                width: 470px;
+                h2 {
+                    font-family: Commissioner;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 28px;
+                    line-height: 40px;
+                    letter-spacing: 0.03em;
+                    color: rgba(0, 0, 0, 0.9);
+                    padding-bottom: 30px;
+                }
+                p {
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                ul {
+                    li {
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 17px;
+                        letter-spacing: 0.01em;
+                        color: rgba(0, 0, 0, 0.75);
+                        list-style: none;
+                        padding: 10px 0 15px 50px;
+                        background: url(/img/list-style.png) 0px 0px no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    .our-advantages {
+        background: #E5E5E5;
+        padding: 80px 0 100px;
+        h2 {
+            font-family: Commissioner;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: 0.03em;
+            color: rgba(0, 0, 0, 0.9);
+            padding-left: 15px;
+        }
+        .quality-mark {
+            display: flex;
+            justify-content: space-between;
+            img {
+                width: 280px;
+            }
+        }
+        .discription {
+            position: relative;
+            margin: 15px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+            p {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 25px;
+                width: 60%;
+                padding: 40px 0 45px 50px;
+            }
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .contact-form {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 100px;
+            .contact-item {
+                width: 500px;
+                h2 {
+                    padding-bottom: 15px;
+                }
+                p {
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 25px;
+                    letter-spacing: 0.01em;
+                    color: rgba(0, 0, 0, 0.8);
+                    flex: none;
+                    order: 2;
+                    align-self: flex-start;
+                    flex-grow: 0;
+                    margin: 20px 15px 0px 15px;
+                }
+                ul {
+                    li {
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: rgba(0, 0, 0, 0.8);
+                        list-style: none;
+                        padding: 15px 35px 15px 100px;
+                    }
+                    li:first-child {
+                        background: url(/img/li-one.png) 15px 20px no-repeat;
+                    }
+                    li:last-child {
+                        background: url(/img/li-two.png) 15px 20px no-repeat;
+                    }
+                }
+            }
+            .form_item {
+                width: 570px;
+                background-color: #fff;
+                margin-right: 15px;
+                form {
+                    padding: 30px 50px 50px;
+                    label {
+                        font-family: Commissioner;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 20px;
+                        letter-spacing: 0.01em;
+                        color: rgba(0, 0, 0, 0.5);
+                        margin: 10px 10px;
+                    }
+                    input {
+                        width: 100%;
+                        height: 35px;
+                        border: none;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: rgba(0, 0, 0, 0.8);
+                        opacity: 0.6;
+                        margin: 0px 10px;
+                    }
+                    p {
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 20px;
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                    a {
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 13px;
+                        line-height: 20px;
+                        text-decoration-line: underline;
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                    input[type="button"] {
+                        font-family: Commissioner;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 13px;
+                        line-height: 30px;
+                        text-align: center;
+                        letter-spacing: 0.08em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        width: 470px;
+                        height: 45px;
+                        background: #DEC377;
+                        border-radius: 2px;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .cost-services {
+            p {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 25px;
+                color: rgba(0, 0, 0, 0.8);
+                width: 670px;
+                padding: 30px 0;
+            }
+            button {
+                width: 200px;
+                height: 45px;
+                background: #DEC377;
+                border-radius: 2px;
+                font-family: Commissioner;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 30px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                border: none;
+            }
+        }
+    }
+
     @media screen and (max-width: 390px) {}
