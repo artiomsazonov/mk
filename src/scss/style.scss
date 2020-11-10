@@ -1,13 +1,6 @@
-    @font-face {
-        font-family: 'FontAwesome';
-        src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-        src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-
     @import 'owl.carousel.min.css';
     @import 'owl.theme.default.css';
+    @import 'fonts.css';
     * {
         margin: 0;
         padding: 0;
@@ -22,10 +15,61 @@
         padding: 15px;
         display: flex;
         justify-content: space-between;
+        .header-top__language {
+            p {
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                color: rgba(0, 0, 0, 0.8);
+                display: inline;
+            }
+            select {
+                border: none;
+                font-family: "Source Sans Pro";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+        .header-top__icon {
+            margin-left: 150px;
+        }
+        .header-top__contacts {
+            padding-right: 20px;
+            a {
+                font-family: "Commissioner";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, 0.5);
+                text-decoration: none;
+                padding: 0 10px;
+            }
+            .msg::after {
+                content: url(/img/msg.png);
+                position: relative;
+                top: 3px;
+                left: 10px;
+            }
+            .mts::after {
+                content: url(/img/mts.png);
+                position: relative;
+                top: 3px;
+                left: 15px;
+            }
+        }
     }
 
     .header-botton {
-        padding: 15px;
+        padding: 15px 15px 20px;
         display: flex;
         justify-content: space-between;
         ul {
@@ -36,11 +80,19 @@
             text-align: right;
         }
         li {
-            padding-right: 26px;
-            color: #494e62;
-            padding-left: 5px;
-            letter-spacing: 0.29px;
+            padding: 0 25px;
             list-style: none;
+            a {
+                font-family: "Commissioner";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, 0.75);
+                text-decoration: none;
+            }
         }
     }
 
@@ -50,9 +102,10 @@
             .owl-nav {
                 position: absolute;
                 bottom: 10%;
+                text-align: center;
                 width: 100%;
-                margin: 0 auto;
                 .owl-next {
+                    margin-right: 1000px;
                     span {
                         width: 42px;
                     }
@@ -70,7 +123,7 @@
                     top: 24%;
                     margin-left: 15px;
                     h4 {
-                        font-family: Commissioner;
+                        font-family: "Commissioner";
                         font-style: normal;
                         font-weight: normal;
                         font-size: 40px;
@@ -79,7 +132,7 @@
                         color: rgba(0, 0, 0, 0.9);
                     }
                     p {
-                        font-family: Lato;
+                        font-family: "Lato", sans-serif;
                         font-style: normal;
                         font-weight: 300;
                         font-size: 15px;
@@ -92,7 +145,7 @@
                         height: 45px;
                         background: #DEC377;
                         border-radius: 2px;
-                        font-family: Commissioner;
+                        font-family: "Commissioner";
                         font-style: normal;
                         font-weight: bold;
                         font-size: 13px;
@@ -111,13 +164,14 @@
     .basic-information {
         background: #E5E5E5;
         h2 {
-            font-family: Commissioner;
+            font-family: "Commissioner";
             font-style: normal;
             font-weight: normal;
             font-size: 28px;
             line-height: 40px;
             letter-spacing: 0.03em;
             color: rgba(0, 0, 0, 0.9);
+            padding-left: 15px;
         }
         .quality-mark {
             position: relative;
@@ -132,13 +186,16 @@
             display: flex;
             justify-content: space-between;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-            margin-bottom: 100px;
+            margin: 0 15px 100px;
             .legal-technology_item {
                 width: 539px;
                 padding: 50px 70px;
+                h2 {
+                    padding: 0;
+                }
                 p {
                     padding: 30px 70px 0 0;
-                    font-family: Lato;
+                    font-family: "Lato", sans-serif;
                     font-style: normal;
                     font-weight: 300;
                     font-size: 15px;
@@ -151,19 +208,20 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            margin: 0 15px;
             .main-directions_item {
                 position: relative;
                 width: 370px;
                 background: #FFFFFF;
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-                margin: 30px 30px 30px 0;
+                margin: 30px 5px 30px 0;
                 div {
                     position: relative;
                     width: 180px;
                     height: 90px;
                     margin: 25px 40px;
                     h3 {
-                        font-family: Commissioner;
+                        font-family: "Commissioner";
                         font-style: normal;
                         font-weight: normal;
                         font-size: 20px;
@@ -171,7 +229,7 @@
                         color: rgba(0, 0, 0, 0.9);
                     }
                     p {
-                        font-family: Lato;
+                        font-family: "Lato", sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 12px;
@@ -198,7 +256,7 @@
             height: 45px;
             background: #DEC377;
             border-radius: 2px;
-            font-family: Commissioner;
+            font-family: "Commissioner";
             font-style: normal;
             font-weight: bold;
             font-size: 13px;
@@ -209,13 +267,14 @@
             color: #FFFFFF;
             border: none;
             cursor: pointer;
+            margin: 0 15px;
         }
         .discription {
             padding-top: 100px;
             display: flex;
             justify-content: space-between;
             p {
-                font-family: Lato;
+                font-family: "Lato", sans-serif;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 15px;
@@ -227,19 +286,20 @@
         .gallery {
             position: relative;
             bottom: -60px;
-            margin-bottom: 60px;
+            margin: 0 15px 60px;
             .owl-carousel {
                 .owl-nav {
                     .owl-prev,
                     .owl-next {
                         position: absolute;
                         bottom: 50%;
+                        margin: 0;
                     }
                     .owl-prev {
-                        left: -3%;
+                        left: -20px;
                     }
                     .owl-next {
-                        right: -3%;
+                        right: -20px;
                     }
                 }
             }
@@ -248,14 +308,14 @@
 
     .reviews {
         h2 {
-            font-family: Commissioner;
+            font-family: "Commissioner";
             font-style: normal;
             font-weight: normal;
             font-size: 28px;
             line-height: 40px;
             letter-spacing: 0.03em;
             color: rgba(0, 0, 0, 0.9);
-            padding: 100px 0 35px 0;
+            padding: 100px 15px 35px;
         }
         .owl-carousel {
             position: relative;
@@ -281,7 +341,7 @@
                     padding: 0 50px 65px 50px;
                 }
                 span {
-                    font-family: Lato;
+                    font-family: "Lato", sans-serif;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 15px;
@@ -292,7 +352,7 @@
                     padding-bottom: 40px;
                 }
                 p {
-                    font-family: Lato;
+                    font-family: "Lato", sans-serif;
                     font-style: normal;
                     font-weight: 300;
                     font-size: 14px;
@@ -302,7 +362,7 @@
                     padding-bottom: 25px;
                 }
                 button {
-                    font-family: Lato;
+                    font-family: "Lato", sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 12px;
@@ -314,10 +374,9 @@
                     cursor: pointer;
                     background-color: transparent;
                     position: absolute;
-                    bottom: 65px;
                 }
                 h4 {
-                    font-family: Commissioner;
+                    font-family: "Commissioner";
                     font-style: normal;
                     font-weight: bold;
                     font-size: 26px;
@@ -333,7 +392,7 @@
             height: 45px;
             background: #DEC377;
             border-radius: 2px;
-            font-family: Commissioner;
+            font-family: "Commissioner";
             font-style: normal;
             font-weight: bold;
             font-size: 13px;
@@ -344,13 +403,15 @@
             color: #FFFFFF;
             border: none;
             cursor: pointer;
+            margin-left: 15px;
         }
         .partners {
             padding-top: 100px;
             .parters-discription {
                 display: flex;
+                margin: 0 15px;
                 p {
-                    font-family: Lato;
+                    font-family: "Lato", sans-serif;
                     font-style: normal;
                     font-weight: 300;
                     font-size: 15px;
@@ -365,7 +426,7 @@
                     border-radius: 2px;
                     flex: none;
                     margin: 0px 10px;
-                    font-family: Commissioner;
+                    font-family: "Commissioner";
                     font-style: normal;
                     font-weight: bold;
                     font-size: 13px;
@@ -392,16 +453,16 @@
         background: #E5E5E5;
         padding-bottom: 85px;
         h2 {
-            font-family: Commissioner;
+            font-family: "Commissioner";
             font-style: normal;
             font-weight: normal;
             font-size: 26px;
             line-height: 45px;
             color: rgba(0, 0, 0, 0.9);
-            padding-bottom: 15px;
+            padding: 0 15px 15px;
         }
         p {
-            font-family: Lato;
+            font-family: "Lato", sans-serif;
             font-style: normal;
             font-weight: 300;
             font-size: 15px;
@@ -409,7 +470,7 @@
             color: rgba(0, 0, 0, 0.8);
         }
         .warranty-service {
-            padding-top: 80px;
+            padding: 80px 15px 0;
             .block_warranty-service {
                 display: flex;
                 justify-content: space-between;
@@ -446,6 +507,7 @@
         }
         .pictureBackground {
             width: 100%;
+            padding-bottom: 80px;
         }
         .service-list {
             display: flex;
@@ -462,7 +524,7 @@
                     left: 0;
                 }
                 h3 {
-                    font-family: Commissioner;
+                    font-family: "Commissioner";
                     font-style: normal;
                     font-weight: normal;
                     font-size: 20px;
@@ -474,7 +536,7 @@
                     position: absolute;
                     bottom: 20px;
                     right: 30px;
-                    font-family: Lato;
+                    font-family: "Lato", sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 12px;
@@ -515,7 +577,7 @@
                 width: 770px;
             }
             button {
-                font-family: Commissioner;
+                font-family: "Commissioner";
                 font-style: normal;
                 font-weight: bold;
                 font-size: 13px;
@@ -549,7 +611,7 @@
             .confidence-item {
                 width: 470px;
                 h2 {
-                    font-family: Commissioner;
+                    font-family: "Commissioner";
                     font-style: normal;
                     font-weight: normal;
                     font-size: 28px;
@@ -559,7 +621,7 @@
                     padding-bottom: 30px;
                 }
                 p {
-                    font-family: Lato;
+                    font-family: "Lato", sans-serif;
                     font-style: normal;
                     font-weight: 300;
                     font-size: 15px;
@@ -568,7 +630,7 @@
                 }
                 ul {
                     li {
-                        font-family: Lato;
+                        font-family: "Lato", sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 17px;
@@ -586,8 +648,9 @@
     .our-advantages {
         background: #E5E5E5;
         padding: 80px 0 100px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         h2 {
-            font-family: Commissioner;
+            font-family: "Commissioner";
             font-style: normal;
             font-weight: normal;
             font-size: 28px;
@@ -609,7 +672,7 @@
             background: #FFFFFF;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
             p {
-                font-family: Lato;
+                font-family: "Lato", sans-serif;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 15px;
@@ -626,14 +689,14 @@
         .contact-form {
             display: flex;
             justify-content: space-between;
-            padding-bottom: 100px;
+            padding: 85px 15px 100px;
             .contact-item {
                 width: 500px;
                 h2 {
-                    padding-bottom: 15px;
+                    padding: 0 0 15px;
                 }
                 p {
-                    font-family: Lato;
+                    font-family: "Lato", sans-serif;
                     font-style: normal;
                     font-weight: 300;
                     font-size: 14px;
@@ -644,49 +707,49 @@
                     order: 2;
                     align-self: flex-start;
                     flex-grow: 0;
-                    margin: 20px 15px 0px 15px;
+                    margin: 20px 0 0px 0;
                 }
                 ul {
                     li {
-                        font-family: Lato;
+                        font-family: "Lato", sans-serif;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 15px;
                         line-height: 25px;
                         color: rgba(0, 0, 0, 0.8);
                         list-style: none;
-                        padding: 15px 35px 15px 100px;
+                        padding: 15px 35px 15px 85px;
                     }
                     li:first-child {
-                        background: url(/img/li-one.png) 15px 20px no-repeat;
+                        background: url(/img/li-one.png) 0px 20px no-repeat;
                     }
                     li:last-child {
-                        background: url(/img/li-two.png) 15px 20px no-repeat;
+                        background: url(/img/li-two.png) 0px 20px no-repeat;
                     }
                 }
             }
             .form_item {
                 width: 570px;
                 background-color: #fff;
-                margin-right: 15px;
                 form {
                     padding: 30px 50px 50px;
                     label {
-                        font-family: Commissioner;
+                        font-family: "Commissioner";
                         font-style: normal;
                         font-weight: 500;
                         font-size: 13px;
                         line-height: 20px;
                         letter-spacing: 0.01em;
                         color: rgba(0, 0, 0, 0.5);
-                        margin: 10px 10px;
+                        margin: 5px 5px;
+                        display: block;
                     }
                     input {
                         width: 100%;
                         height: 35px;
                         border: none;
                         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-                        font-family: Lato;
+                        font-family: "Lato", sans-serif;
                         font-style: normal;
                         font-weight: 300;
                         font-size: 15px;
@@ -696,15 +759,16 @@
                         margin: 0px 10px;
                     }
                     p {
-                        font-family: Lato;
+                        font-family: "Lato", sans-serif;
                         font-style: normal;
                         font-weight: 300;
                         font-size: 13px;
                         line-height: 20px;
                         color: rgba(0, 0, 0, 0.5);
+                        padding-top: 20px;
                     }
                     a {
-                        font-family: Lato;
+                        font-family: "Lato", sans-serif;
                         font-style: normal;
                         font-weight: bold;
                         font-size: 13px;
@@ -713,7 +777,7 @@
                         color: rgba(0, 0, 0, 0.5);
                     }
                     input[type="button"] {
-                        font-family: Commissioner;
+                        font-family: "Commissioner";
                         font-style: normal;
                         font-weight: bold;
                         font-size: 13px;
@@ -727,14 +791,18 @@
                         background: #DEC377;
                         border-radius: 2px;
                         opacity: 1;
-                        margin: 0;
+                        margin: 30px 0 0 0;
                     }
                 }
             }
         }
         .cost-services {
+            padding: 0 15px;
+            h2 {
+                padding: 0;
+            }
             p {
-                font-family: Lato;
+                font-family: "Lato", sans-serif;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 15px;
@@ -748,7 +816,7 @@
                 height: 45px;
                 background: #DEC377;
                 border-radius: 2px;
-                font-family: Commissioner;
+                font-family: "Commissioner";
                 font-style: normal;
                 font-weight: bold;
                 font-size: 13px;
@@ -758,6 +826,171 @@
                 text-transform: uppercase;
                 color: #FFFFFF;
                 border: none;
+            }
+        }
+    }
+
+    .footer {
+        background: #E5E5E5;
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px 60px;
+            .footer-item {
+                h2 {
+                    font-family: "Commissioner";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: rgba(0, 0, 0, 0.9);
+                    padding: 50px 0 70px 0;
+                }
+                h3 {
+                    font-family: "Lato", sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                    color: rgba(0, 0, 0, 0.5);
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                }
+                h4 {
+                    font-family: "Commissioner";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 25px;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    color: rgba(0, 0, 0, 0.75);
+                    padding: 35px 0 5px;
+                }
+                h5 {
+                    font-family: "Commissioner";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 20px;
+                    letter-spacing: 0.01em;
+                    color: rgba(0, 0, 0, 0.75);
+                    margin-top: 5px;
+                }
+                img {
+                    padding: 60px 15px 50px 0;
+                    margin-left: -3px;
+                }
+                .footer-item_adres {
+                    display: flex;
+                    justify-content: space-between;
+                    .adres-item {
+                        width: 200px;
+                        a {
+                            font-family: 'Lato', sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            color: rgba(0, 0, 0, 0.8);
+                            text-decoration: none;
+                            padding-top: 5px;
+                            display: block;
+                        }
+                        a[href="tel:+375 (44) 755-01-01"] {
+                            padding-top: 15px;
+                        }
+                        a[href="tel:+375 (17) 374-40-60"] {
+                            padding-bottom: 15px;
+                        }
+                        p {
+                            font-family: 'Lato', sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 13px;
+                            line-height: 20px;
+                            color: rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+            }
+            .item_one {
+                width: 280px;
+                p {
+                    font-family: "Commissioner";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 20px;
+                    letter-spacing: 0.01em;
+                    color: rgba(0, 0, 0, 0.5);
+                    margin: 0 0 10px;
+                    span {
+                        font-family: 'Lato', sans-serif;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 20px;
+                        color: rgba(0, 0, 0, 0.5);
+                        padding-left: 15px;
+                    }
+                }
+                a::after {
+                    content: url(/img/arrow.png);
+                    padding-left: 15px;
+                }
+                a {
+                    font-family: 'Lato', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: rgba(0, 0, 0, 0.75);
+                    text-decoration: none;
+                    width: 237px;
+                    padding-bottom: 30px;
+                    display: block;
+                }
+                a:last-child::after {
+                    position: relative;
+                    bottom: 10px;
+                }
+            }
+            .item_two {
+                width: 670px;
+            }
+            .item_three {
+                width: 170px;
+                h5 {
+                    padding-top: 30px;
+                }
+                p {
+                    font-family: 'Lato', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+            .item_two,
+            .item_three {
+                padding: 85px 0 0 0;
+            }
+        }
+        .footer-bottom {
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            p {
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                color: rgba(0, 0, 0, 0.8);
+                padding: 17px 0 18px;
             }
         }
     }

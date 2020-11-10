@@ -32,3 +32,10 @@
          }
      });
  });
+ //  window.onload = function() {
+ //      var navs = document.querySelectorAll('.owl-nav')
+ //      console.log(navs[0])
+ //      navs[0].classList.remove('owl-nav')
+ //      navs[0].classList.add('wrapper')
+ //      navs[0].innerHTML = '<div class="owl-nav"><button type="button" role="presentation" class="owl-prev"></button><button type="button" role="presentation" class="owl-next"></button></div>'
+ //  };
